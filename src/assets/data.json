@@ -1,0 +1,58 @@
+[
+  {
+    "senderStoreCode": "senderStore1",
+    "senderStoreName": "NV1",
+    "destinationStoreName": "SL2",
+    "customStatus": "X",
+    "referenceType": "type1",
+    "reference": "REF123456",
+    "goodsDescription": "Électronique",
+    "quantity": 50,
+    "weight": 100.5,
+    "totalQuantity": 100,
+    "totalWeight": 200.0,
+    "type": "ENTREE"
+  },
+  {
+    "senderStoreCode": "senderStore2",
+    "senderStoreName": "Dupoint",
+    "destinationStoreName": "NV1",
+    "customStatus": "C",
+    "referenceType": "type2",
+    "reference": "REF654321",
+    "goodsDescription": "Textile",
+    "quantity": 30,
+    "weight": 75.0,
+    "totalQuantity": 60,
+    "totalWeight": 150.0,
+    "type": "ENTREE"
+  },
+  {
+    "senderStoreCode": "senderStore1",
+    "senderStoreName": "Dupoint",
+    "destinationStoreName": "NV1",
+    "customStatus": "X",
+    "referenceType": "type1",
+    "reference": "REF789012",
+    "goodsDescription": "Alimentaire",
+    "quantity": 100,
+    "weight": 200.0,
+    "totalQuantity": 200,
+    "totalWeight": 400.0,
+    "type": "SORTIE"
+  },
+  {
+    "senderStoreCode": "senderStore3",
+    "senderStoreName": "NV1",
+    "destinationStoreName": "NV1",
+    "customStatus": "X",
+    "referenceType": "type3",
+    "reference": "REF345678",
+    "goodsDescription": "Médical",
+    "quantity": 20,
+    "weight": 50.0,
+    "totalQuantity": 40,
+    "totalWeight": 100.0,
+    "type": "CONS"
+  }
+]

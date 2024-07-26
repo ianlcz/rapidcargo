@@ -1,0 +1,37 @@
+<div class="container mx-auto my-4">
+  <h2 class="text-lg font-semibold mb-4">Derniers mouvements envoyés</h2>
+  <table class="min-w-full border-collapse border border-gray-200">
+    <thead>
+      <tr>
+        <th class="border border-gray-200 p-2">Horodatage</th>
+        <th class="border border-gray-200 p-2">Type</th>
+        <th class="border border-gray-200 p-2">De</th>
+        <th class="border border-gray-200 p-2">Vers</th>
+        <th class="border border-gray-200 p-2">Référence</th>
+        <th class="border border-gray-200 p-2">Quantité</th>
+        <th class="border border-gray-200 p-2">Poids</th>
+        <th class="border border-gray-200 p-2">Statut douanier</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let movement of movements" class="hover:bg-gray-100">
+        <td class="border border-gray-200 p-2">{{ movement.timestamp }}</td>
+        <td class="border border-gray-200 p-2">{{ movement.type }}</td>
+        <td class="border border-gray-200 p-2">
+          {{ movement.senderStoreName }}
+        </td>
+        <td class="border border-gray-200 p-2">
+          {{ movement.destinationStoreName }}
+        </td>
+        <td class="border border-gray-200 p-2">{{ movement.reference }}</td>
+        <td class="border border-gray-200 p-2 text-right">
+          {{ movement.quantity }}
+        </td>
+        <td class="border border-gray-200 p-2 text-right">
+          {{ movement.weight }}
+        </td>
+        <td class="border border-gray-200 p-2">{{ movement.customStatus }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
