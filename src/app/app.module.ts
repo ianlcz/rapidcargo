@@ -7,9 +7,16 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routes';
 import { MovementEntryComponent } from './components/movement-entry/movement-entry.component';
+import { MovementExitComponent } from './components/movement-exit/movement-exit.component';
+import { MovementHistoryComponent } from './components/movement-history/movement-history.component';
 
 @NgModule({
-  declarations: [AppComponent, MovementEntryComponent],
+  declarations: [
+    AppComponent,
+    MovementEntryComponent,
+    MovementExitComponent,
+    MovementHistoryComponent,
+  ],
   imports: [
     CommonModule,
     BrowserModule,

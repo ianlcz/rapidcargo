@@ -1,6 +1,9 @@
+import { MovementType } from '../enums/movement.enum';
+
 export interface Movement {
   senderStoreCode: string;
   senderStoreName: string;
+  destinationStoreCode: string;
   destinationStoreName: string;
   customStatus: string;
   referenceType: string;
@@ -12,10 +15,4 @@ export interface Movement {
   totalWeight?: number;
   type: MovementType;
   timestamp: Date;
-}
-
-export enum MovementType {
-  ENTREE,
-  SORTIE,
-  CONS,
 }

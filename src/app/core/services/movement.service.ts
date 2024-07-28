@@ -17,14 +17,14 @@ export class MovementService {
       .pipe(catchError(this.handleError<Movement[]>('getMovements', [])));
   }
 
-  createNewMovement(newMovement: Movement): Observable<Movement> {
+  createMovement(Movement: Movement): Observable<Movement> {
     return this.http
       .post<Movement>(
         this.apiUrl,
         this.getMovements().subscribe((movements) => {
-          console.log([...movements, newMovement]); //Adding newMovement into movements array
+          console.log([...movements, Movement]);
 
-          return newMovement;
+          return Movement;
         })
       )
       .pipe(catchError(this.handleError<Movement>('createNewMovement')));
